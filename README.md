@@ -12,28 +12,38 @@ I'm Emanuel Luis, _aka_ **@tiov4d3r**, 20 years old and from Maranhão, Brazil. 
 
 ## Education
 
-**Curso:** Software Engineering
-**Instituição:** UNDB - Centro Universitário
-**Situação:** Studying
-
-**Curso:** Computer Engineering
-**Instituição:** IFMA - Campus Santa Inês
-**Situação:** Locked
-
-**Curso:** Building Technician
-**Instituição:** IFMA - Campus Santa Inês
-**Situação:** Done
+| Course               | Institution                 | Situation |
+| -------------------- | --------------------------- | --------- |
+| Software Engineering | UNDB - Centro Universitário | Studying  |
+| Computer Engineering | IFMA - Campus Santa Inês    | Locked    |
+| Building Technician  | IFMA - Campus Santa Inês    | Done      |
 
 ## Skills
 
-**English (Advanced)** - mainly at writing, I'm still developing my talking skills;
-**Programming Logic (Advanced)** - I've started studying programming since the beginning 2019;
-**C/C++ (Intermediary)** - I've studied C at Computer Engineering course, and lately studying C++ for game dev;
-**Java (Beginner)** - also learned it in my course of Computer Engineering, but I didn't really go into it;
-**C# (Intermediary)** - by the plataform **Udemy**, I've about 38h of certificates of it;
-**Python (Intermediary)** - also studied it by **Udemy**, I've done a 26h online course, also I'm developing some projects for self improvement, like [Snake Game](https://github.com/tiovader/snake-game);
-**Git(Beginner)** - learning while I develop projects into this plataform;
-**JavaScript, CSS, HTML (Beginner)** - I'm starting to study it, through of **DankiCode**, where I am developing all at same time;
+**English (Advanced)** - mainly at writing, I'm still developing my talking skills
+
+-------------------------------------------
+**Programming Logic (Advanced)** - I've started studying programming since the beginning 2019
+
+-------------------------------------------
+**C/C++ (Intermediary)** - I've studied C at Computer Engineering course, and lately studying C++ for game dev
+
+-------------------------------------------
+**Java (Beginner)** - also learned it in my course of Computer Engineering, but I didn't really go into it
+
+-------------------------------------------
+**C# (Intermediary)** - by the plataform **Udemy**, I've about 38h of certificates of it
+
+-------------------------------------------
+**Python (Intermediary)** - also studied it by **Udemy**, I've done a 26h online course, also I'm developing some projects for self improvement, like [Snake Game](https://github.com/tiovader/snake-game)
+
+-------------------------------------------
+**Git(Beginner)** - learning while I develop projects into this plataform
+
+-------------------------------------------
+**JavaScript, CSS, HTML (Beginner)** - I'm starting to study it, through of **DankiCode**, where I am developing all at same time
+
+-------------------------------------------
 
 ## Vocational Courses
 
