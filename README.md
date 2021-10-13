@@ -5,10 +5,20 @@ I'm Emanuel Luis, _aka_ **@tiov4d3r**, 20 years old and from Maranhão, Brazil. 
 ## Personal Data
 
 **Name:** Emanuel Luis Carvalho de Sousa Filho
+
+-------------------------------------------
 **Date of Birth:** 07/31/2001
+
+-------------------------------------------
 **Locality:** São Luis - MA, Brazil
+
+-------------------------------------------
 **E-mail:** emanuel.filho08@gmail.com / tiov4d3r@gmail.com
+
+-------------------------------------------
 **Contact:** +55 98 98553-1598
+
+-------------------------------------------
 
 ## Education
 
