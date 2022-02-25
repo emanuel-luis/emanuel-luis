@@ -1,89 +1,66 @@
-# About me
+<h1> Hi there 👋 I'm Emanuel Luis 👨‍💻 </h1>
+<p style="text-align:justify">I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far. </p>
+<div align=center>   
+  <img src="https://github-readme-stats.vercel.app/api?username=tiovader&show_icons=true&count_private=false&theme=dark" height="200">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiovader&theme=dark" height="200">
+  <div>
+    <img align="center" alt="python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+    <img align="center" alt="c" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/c/c-original.svg">
+    <img align="center" alt="csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/csharp/csharp-original.svg">
+    <img align="center" alt="java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/java/java-original.svg">
+    <img  align="center" alt="pandas" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg">
+    <img  align="center" alt="numpy" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/numpy/numpy-original.svg">
+  </div>
 
-I'm Emanuel Luis, _aka_ **@tiov4d3r**, 20 years old and from Maranhão, Brazil. My goals are to become a software developer, also I'm interest in game and web development, currently studying Software Engineering, but mostly time I am studying in home by myself, so I can be better qualified to the market of technology. Lately I've been developing my own projects as long as I get into the subjects, so I can improve better and faster, and also develop some soft skills like standardization of projects and programming logic.
+  **`open to new challenges and experiences.`**
 
-## Personal Data
+  <a href="https://www.linkedin.com/in/emanuel-l-5580b9125/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://stackoverflow.com/users/17576381/tiov4d3r"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"></a>
+  <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=emanuel.filho08@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://twitter.com/tiov4d3r"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
+  <a href="https://www.instagram.com/tiov4d3r/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 
-**Name:** Emanuel Luis Carvalho de Sousa Filho
+  <h2> <strong>💻 MY WORKSPACE</strong> </h2>
+  <img src="https://img.shields.io/badge/windows-%230078D6.svg?&style=for-the-badge&logo=windows&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> 
+  <br/>
+  <img src="https://img.shields.io/badge/intel-core%20i5 3470-%230071C5.svg?&style=for-the-badge&logo=intel&logoColor=white" />
+  <img src="https://img.shields.io/badge/RAM-24GB DDR3-%230071C5.svg?&style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/nvidia-gtx%201060%203GB-%2376B900.svg?&style=for-the-badge&logo=nvidia&logoColor=white"/>
+</div>
+<details>
+  <summary>📃 Resume</summary>
 
--------------------------------------------
-**Date of Birth:** 07/31/2001
+  ## Education
 
--------------------------------------------
-**Locality:** São Luis - MA, Brazil
+  - 📖 **Software Engineering**\
+  📆 2019 - *Now*\
+  📍 **UniDomBosco University Center** - São Luís, Brazil
 
--------------------------------------------
-**E-mail:** emanuel.filho08@gmail.com / tiov4d3r@gmail.com
+  ### Courses
 
--------------------------------------------
-**Contact:** +55 98 98553-1598
+  - 📖 [**C# Curso Completo: Do Básico ao Avançado!**](https://www.udemy.com/certificate/UC-1fb01566-9f25-4c3a-ae4f-da1ff8465ed6/)\
+  📆 05/02/2020\
+  📍 **Udemy** - Leonardo Moura Leitão
+  
+  - 📖 [**C# Basics for Beginners: Learn C# Fundamentals by Coding**](https://www.udemy.com/certificate/UC-319fe684-5ec0-48e0-8c7f-4248932ed54d/)\
+  📆 05/08/2020\
+  📍 **Udemy** - Mosh Hamedani
+  
+  - 📖 [**C# Intermediate: Classes, Interfaces and OOP**](https://www.udemy.com/certificate/UC-ec641ed1-8d1d-436f-a2b9-3388e9a8958d/)\
+  📆 07/18/2020\
+  📍 **Udemy** - Mosh Hamedani
 
--------------------------------------------
+  - 📖 [**C# Advanced Topics: Prepare for Technical Interviews**](https://www.udemy.com/certificate/UC-1abc88b4-95e7-4e97-aaff-2471a71566da/)\
+  📆 10/04/2020\
+  📍 **Udemy** - Mosh Hamedani
 
-## Education
+  - 📖 [**Python 3 - Curso Completo do Básico ao Avançado**](https://www.udemy.com/certificate/UC-a1ac8f23-95bd-4b27-8133-d474faef3c44/)\
+  📆 07/08/2021\
+  📍 **Udemy** - Leonardo Moura Leitão
 
-| Course               | Institution                 | Situation |
-| -------------------- | --------------------------- | --------- |
-| Software Engineering | UNDB - Centro Universitário | Studying  |
-| Computer Engineering | IFMA - Campus Santa Inês    | Locked    |
-| Building Technician  | IFMA - Campus Santa Inês    | Done      |
-
-## Skills
-
-**English (Advanced)** - mainly at writing, I'm still developing my talking skills
-
--------------------------------------------
-**Programming Logic (Advanced)** - I've started studying programming since the beginning 2019
-
--------------------------------------------
-**C/C++ (Intermediary)** - I've studied C at Computer Engineering course, and lately studying C++ for game dev
-
--------------------------------------------
-**Java (Beginner)** - also learned it in my course of Computer Engineering, but I didn't really go into it
-
--------------------------------------------
-**C# (Intermediary)** - by the plataform **Udemy**, I've about 38h of certificates of it
-
--------------------------------------------
-**Python (Intermediary)** - also studied it by **Udemy**, I've done a 26h online course, also I'm developing some projects for self improvement, like [Snake Game](https://github.com/tiovader/snake-game)
-
--------------------------------------------
-**Git(Beginner)** - learning while I develop projects into this plataform
-
--------------------------------------------
-**JavaScript, CSS, HTML (Beginner)** - I'm starting to study it, through of **DankiCode**, where I am developing all at same time
-
--------------------------------------------
-
-## Vocational Courses
-
-### IFMA - Campus Santa Inês
-
-| Course                              | Period                  | Workload(h) |
-| ----------------------------------- | ----------------------- | ----------- |
-| 1º Semana de Tecnologia (TECH WEEK) | 08/19/2019 - 08/23/2019 | 25          |
-| Programação de Microcontroladores   | 08/20/2019              | 4           |
-| Robótica                            | 08/21/2019              | 4           |
-| Criação de API com NODEJS           | 08/22/2019              | 4           |
-| Robótica Avançada                   | 08/22/2019              | 4           |
-
-### Udemy
-
-| Course                                               | Period     | Workload(h) |
-| ---------------------------------------------------- | ---------- | ----------- |
-| C# Curso Completo: do Básico ao Avançado             | 05/02/2020 | 16.5        |
-| C# for Beginners: Learn C# Fundamentals By Coding    | 05/08/2020 | 5.5         |
-| C# Intermediate: Classes, Interfaces and OOP         | 07/18/2020 | 6           |
-| C# Advanced Topics: Prepare for Technical Interviews | 10/04/2020 | 3           |
-| C# Orientada a Objetos - Sistema Vendas              | 10/05/2020 | 6.5         |
-| Python 3 - Curso Completo do Básico ao Avançado      | 07/08/2021 | 26          |
-
-## Professional Experience
-
-None till the moment.
-
-## Extracurricular Activities
-
-- Pratice of programming throught sites like **Exercism** and **URI Online Judge**
-- 1º Week of Technology (TECHWEEK), at IFMA - Campus Santa Inês
-- Snake Game, developed in Python
+  - 📖 **Training in Machine Learning**\
+  📆 02/07/2022 - *Now*\
+  📍 **Data Inception AI** - Giovanni Lucca
+  
+</details>
