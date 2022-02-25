@@ -1,10 +1,11 @@
 <img min-width="400px" max-width="400px" width="400px" align="right" src="https://github-readme-stats.vercel.app/api?username=tiovader&show_icons=true&count_private=false&theme=dark">
 <div align=left>
-    <h1> Hi there 👋 I'm Emanuel Luis 👨‍💻 </h1>
-    <p>I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far and currently looking for my first job at development area.</p>
+<h1> Hi there 👋 I'm Emanuel Luis 👨‍💻 </h1>
+<p>I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far and currently looking for my first job at development area.</p>
     
 <img min-width="400px" max-width="400px" width="400px" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiovader&theme=dark">  
-  <div align=center>
+<div align=center>
+<br/>
       
 <img alt="python" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 <img alt="c" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/c/c-original.svg">
@@ -15,7 +16,6 @@
 
   **`open to new challenges and experiences.`**
   
-</div>
 <div align=center>
 <a href="https://www.linkedin.com/in/emanuel-l-5580b9125/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <a href="https://stackoverflow.com/users/17576381/tiov4d3r"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"></a>
@@ -27,7 +27,12 @@
 </div>
 </div>
 <br/>
-<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="300px" max-width="300px" width="300px" align="left" alt="Computador iuriCode">
+<br/>
+
+<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="left" alt="Computador iuriCode">
+  <br/>
+  <br/>
+
 <div align=right>  
 <div align=center>
 <h1> <strong>💻 MY WORKSPACE</strong> </h1>
