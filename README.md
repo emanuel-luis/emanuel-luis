@@ -1,38 +1,49 @@
-<h1 align=center> Hi there 👋 I'm Emanuel Luis 👨‍💻 </h1>
-<p style="text-align:justify">I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far and currently looking for my first job at development area.</p>
-<div align=center>   
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=tiovader&show_icons=true&count_private=false&theme=dark">
-  <img height="211" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiovader&theme=dark">
-  <div>
-    <img align="center" alt="python" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-    <img align="center" alt="c" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/c/c-original.svg">
-    <img align="center" alt="csharp" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/csharp/csharp-original.svg">
-    <img align="center" alt="java" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/java/java-original.svg">
-    <img align="center" alt="pandas" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg">
-    <img align="center" alt="numpy" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/numpy/numpy-original.svg">
-  </div>
+<img min-width="400px" max-width="400px" width="400px" align="right" src="https://github-readme-stats.vercel.app/api?username=tiovader&show_icons=true&count_private=false&theme=dark">
+<div align=left>
+    <h1> Hi there 👋 I'm Emanuel Luis 👨‍💻 </h1>
+    <p>I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far and currently looking for my first job at development area.</p>
+    
+<img min-width="400px" max-width="400px" width="400px" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiovader&theme=dark">  
+  <div align=center>
+      
+<img alt="python" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+<img alt="c" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/c/c-original.svg">
+<img alt="csharp" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/csharp/csharp-original.svg">
+<img alt="java" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/java/java-original.svg">
+<img alt="pandas" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg">
+<img alt="numpy" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/numpy/numpy-original.svg">
 
   **`open to new challenges and experiences.`**
-
-  <a href="https://www.linkedin.com/in/emanuel-l-5580b9125/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="https://stackoverflow.com/users/17576381/tiov4d3r"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"></a>
-  <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=emanuel.filho08@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <br/>
-  <a href="https://twitter.com/tiov4d3r"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
-  <a href="https://www.instagram.com/tiov4d3r/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-  <a href="https://wa.me/5598985531598"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
+  
+</div>
+<div align=center>
+<a href="https://www.linkedin.com/in/emanuel-l-5580b9125/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="https://stackoverflow.com/users/17576381/tiov4d3r"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"></a>
+<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=emanuel.filho08@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 <br/>
+<a href="https://twitter.com/tiov4d3r"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
+<a href="https://www.instagram.com/tiov4d3r/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+<a href="https://wa.me/5598985531598"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
+</div>
+</div>
 <br/>
-  <h1> <strong>💻 MY WORKSPACE</strong> </h1>
-  <img src="https://img.shields.io/badge/windows-%230078D6.svg?&style=for-the-badge&logo=windows&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> 
+<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="300px" max-width="300px" width="300px" align="left" alt="Computador iuriCode">
+<div align=right>  
+<div align=center>
+<h1> <strong>💻 MY WORKSPACE</strong> </h1>
+<img src="https://img.shields.io/badge/windows-%230078D6.svg?&style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> 
   <br/>
-  <img src="https://img.shields.io/badge/intel-core%20i5 3470-%230071C5.svg?&style=for-the-badge&logo=intel&logoColor=white" />
-  <img src="https://img.shields.io/badge/RAM-24GB DDR3-%230071C5.svg?&style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/nvidia-gtx%201060%203GB-%2376B900.svg?&style=for-the-badge&logo=nvidia&logoColor=white"/>
+<img src="https://img.shields.io/badge/intel-core%20i5 3470-%230071C5.svg?&style=for-the-badge&logo=intel&logoColor=white" />
+<img src="https://img.shields.io/badge/RAM-24GB DDR3-%230071C5.svg?&style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/nvidia-gtx%201060%203GB-%2376B900.svg?&style=for-the-badge&logo=nvidia&logoColor=white"/>
+</div>
 </div>
 <br/>
 <br/>
+<br/>
+<br/>
+
 <details>
   <summary>📃 Resume</summary>
 
