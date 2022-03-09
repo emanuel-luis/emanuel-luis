@@ -1,7 +1,7 @@
 <img min-width="50px" max-width="400px" width="400px" align="right" src="https://github-readme-stats.vercel.app/api?username=tiovader&show_icons=true&count_private=false&theme=dark">
 <div align=left>
 <h1> Hi there 👋 I'm Emanuel Luis 👨‍💻 </h1>
-<p>I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far and currently looking for my first job at development area.</p>
+<p align=justify>I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far and currently looking for my first job at development area.</p>
     
 <img min-width="50px" max-width="400px" width="400px" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiovader&theme=dark">  
 <div align=center>
