@@ -2,7 +2,6 @@
 <div align=left>
 <h1> Hi there 👋 I'm Emanuel Luis 👨‍💻 </h1>
 <p align=justify>I'm a Software Engineering student and Python developer from Maranhão, Brazil. Focusing on Python since 6 months, where I've worked with <strong>Web Scrapping</strong>, <strong>Data Manipulation</strong> and <strong>Machine Learning</strong> so far and currently looking for my first job at development area.</p>
-    
 <img min-width="50px" max-width="400px" width="400px" align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiovader&theme=dark">  
 <div align=center>
 <br/>
@@ -12,22 +11,16 @@
 <img alt="csharp" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/csharp/csharp-original.svg">
 <img alt="java" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/java/java-original.svg">
 <img alt="pandas" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg">
+<br/>
 <img alt="numpy" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/numpy/numpy-original.svg">
-
+<img alt="javascript" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
+<img alt="docker" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+<img alt="git" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+<img alt="opencv" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg">
+    
   **`open to new challenges and experiences.`**
-  
-<div align=center>
-<a href="https://www.linkedin.com/in/emanuel-l-5580b9125/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-<a href="https://stackoverflow.com/users/17576381/tiov4d3r"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"></a>
-<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=emanuel.filho08@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-<br/>
-<a href="https://twitter.com/tiov4d3r"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
-<a href="https://www.instagram.com/tiov4d3r/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-<a href="https://wa.me/5598985531598"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
 </div>
-</div>
-<br/>
-<br/>
+
 
 <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="50px" max-width="400px" width="400px" align="left" alt="Computador iuriCode">
   <br/>
@@ -48,14 +41,24 @@
 <br/>
 <br/>
 <br/>
-
+<br/>
+<div align=center>
+<a href="https://www.linkedin.com/in/emanuel-l-5580b9125/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="https://stackoverflow.com/users/17576381/tiov4d3r"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"></a>
+<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=emanuel.filho08@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://twitter.com/tiov4d3r"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
+<a href="https://www.instagram.com/tiov4d3r/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+</div>
+<br/>
+<br/>
+    
 <details>
   <summary>📃 Resume</summary>
 
   ## Education
 
   - 📖 **Software Engineering**\
-  📆 2019 - *Now*\
+  📆 2021 - *Now*\
   📍 **UniDomBosco University Center** - São Luís, Brazil
 
   ### Courses
@@ -81,7 +84,11 @@
   📍 **Udemy** - Leonardo Moura Leitão
 
   - 📖 **Training in Machine Learning**\
-  📆 02/07/2022 - *Now*\
+  📆 12/03/2022 \
+  📍 **Data Inception AI** - Giovanni Lucca
+  
+  - 📖 **Training in Computational Vision**\
+  📆 *Now* \
   📍 **Data Inception AI** - Giovanni Lucca
   
 </details>
