@@ -2,7 +2,7 @@
 <h1 align="center">Emanuel Luis</h1>
 
 <p align="center">
-  <strong>Data Engineer</strong> · batch &amp; CDC ingestion · dbt modeling · orchestration · data platforms
+  <strong>Data Engineer</strong> · ingestion · dbt modeling · orchestration · data platforms
 </p>
 
 <p align="center">
