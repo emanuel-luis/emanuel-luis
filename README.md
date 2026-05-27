@@ -2,7 +2,7 @@
 <h1 align="center">Emanuel Luis</h1>
 
 <p align="center">
-  <strong>Data Engineer</strong> · batch &amp; CDC ingestion · dbt modeling · orchestration · data platforms
+  <strong>Data Engineer</strong> · ingestion · dbt modeling · orchestration · data platforms
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@ I design and build **scalable data pipelines and modern data architectures** tha
 to extract strategic value from data. **3+ years** in data engineering on a strong software-engineering
 foundation — specializing in **ETL/ELT**, **data lakes**, and **analytics platforms**.
 
-Data Engineer at **PULSE**, the data department of **Grupo Mateus** (São Luís, Brazil); B.S. in
+Data Engineer at **PULSE**, the IT department of **Grupo Mateus** (São Luís, Brazil); B.S. in
 Software Engineering from **UNDB**.
 
 **Core expertise**
@@ -34,7 +34,7 @@ Software Engineering from **UNDB**.
 ### Experience
 
 <!-- IP-safe (no internal names). Metric is from your LinkedIn — adjust if needed. -->
-**Data Engineer — PULSE** (data department @ **Grupo Mateus**) · Aug 2022 – present
+**Data Engineer — PULSE** (IT department @ **Grupo Mateus**) · Aug 2022 – present
 - Design and maintain **scalable data pipelines processing millions of records daily** across 20+ source systems (**700+ ingestion configs**, **~90 dbt DAGs**).
 - Built a **data lakehouse** on **Azure + Databricks** — medallion architecture (staging → bronze → gold) with **Delta Lake** and **Unity Catalog**.
 - Built a **materialized change-tracking (CDC) system** that cut a key pipeline's runtime from **~60 min to 13 min**.
