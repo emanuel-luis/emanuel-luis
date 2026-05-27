@@ -156,12 +156,16 @@ Software Engineering from **UNDB**.
 
 - **Computational methodologies for detection & diagnosis of SARS-CoV-2 (COVID-19) from medical images** — ERCEMAPI (Regional Computing School, CE/MA/PI). <!-- confirm exact title, authors, year --> · code: [`PROJETO-DE-PESQUISA-COVID-19`](https://github.com/tiovader/PROJETO-DE-PESQUISA-COVID-19)
 
-### GitHub
+### GitHub Analytics
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=tiovader&show_icons=true&hide_border=true&count_private=true&theme=default" alt="stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tiovader&layout=compact&hide_border=true&theme=default" alt="top languages" />
-</p>
+<div align="center">
+  <img width="49%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=tiovader&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+  <img width="41%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=tiovader&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
+</div>
+
+<div align="center">
+  <img width="90%" src="https://streak-stats.demolab.com?user=tiovader&theme=tokyonight&hide_border=true"/>
+</div>
 
 <details>
 <summary>Education &amp; training</summary>
