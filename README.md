@@ -132,10 +132,10 @@ Software Engineering from **UNDB**.
 
 | Project | What it shows |
 | --- | --- |
-| [`controladoria-api`](https://github.com/tiovader/controladoria-api) | Data/document platform — FastAPI (clean architecture), S3, Alembic migrations, Terraform, scheduled batch sync, Prometheus metrics. |
-| [`vaccine-backend`](https://github.com/tiovader/vaccine-backend) | Dimensional modeling — star schema (dimension/fact), SQL DDL, and seed generation. |
-| [`bank-credit`](https://github.com/tiovader/bank-credit) | Full-stack data app — FastAPI + React, graph-based routing and SLAs, migrations and tests. |
-| [`ecommerce-scrapping`](https://github.com/tiovader/ecommerce-scrapping) | Data ingestion — Scrapy + Splash + Selenium with JavaScript rendering. |
+| [`controladoria-api`](https://github.com/emanuel-luis/controladoria-api) | Data/document platform — FastAPI (clean architecture), S3, Alembic migrations, Terraform, scheduled batch sync, Prometheus metrics. |
+| [`vaccine-backend`](https://github.com/emanuel-luis/vaccine-backend) | Dimensional modeling — star schema (dimension/fact), SQL DDL, and seed generation. |
+| [`bank-credit`](https://github.com/emanuel-luis/bank-credit) | Full-stack data app — FastAPI + React, graph-based routing and SLAs, migrations and tests. |
+| [`ecommerce-scrapping`](https://github.com/emanuel-luis/ecommerce-scrapping) | Data ingestion — Scrapy + Splash + Selenium with JavaScript rendering. |
 
 ### Open-source contributions
 
@@ -154,17 +154,17 @@ Software Engineering from **UNDB**.
 
 ### Publications
 
-- **Computational methodologies for detection & diagnosis of SARS-CoV-2 (COVID-19) from medical images** — ERCEMAPI (Regional Computing School, CE/MA/PI). <!-- confirm exact title, authors, year --> · code: [`PROJETO-DE-PESQUISA-COVID-19`](https://github.com/tiovader/PROJETO-DE-PESQUISA-COVID-19)
+- **Computational methodologies for detection & diagnosis of SARS-CoV-2 (COVID-19) from medical images** — ERCEMAPI (Regional Computing School, CE/MA/PI). <!-- confirm exact title, authors, year --> · code: [`PROJETO-DE-PESQUISA-COVID-19`](https://github.com/emanuel-luis/PROJETO-DE-PESQUISA-COVID-19)
 
 ### GitHub Analytics
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=tiovader&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img width="41%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=tiovader&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
+  <img width="49%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=emanuel-luis&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+  <img width="41%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=emanuel-luis&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
 </div>
 
 <div align="center">
-  <img width="90%" src="https://streak-stats.demolab.com?user=tiovader&theme=tokyonight&hide_border=true"/>
+  <img width="90%" src="https://streak-stats.demolab.com?user=emanuel-luis&theme=tokyonight&hide_border=true"/>
 </div>
 
 <details>
