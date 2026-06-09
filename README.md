@@ -121,7 +121,7 @@ Software Engineering from **UNDB**.
   </tr>
 </table>
 
-<img src="./images/de-banner.jpeg" width="100%" height="80%" />
+<img src="./images/de-banner.png" width="100%" height="80%" />
 <!--
   TODO once built (see ../04-new-projects.md):
   - de-lakehouse-pipeline  — flagship end-to-end ELT (ingest -> dbt medallion -> marts -> dashboard)
