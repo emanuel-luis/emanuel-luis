@@ -120,7 +120,9 @@ UNDB.
   </tr>
 </table>
 
-<img src="./images/de-banner.png" width="100%" alt="Data Engineer Portfolio" />
+<a href="https://github.com/emanuel-luis/data-engineering-projects" title="Open the data engineering portfolio index">
+  <img src="./images/de-banner.png" width="100%" alt="Data Engineer Portfolio: open the project index" />
+</a>
 
 ### Projects
 
