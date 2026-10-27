@@ -41,6 +41,26 @@ UNDB.
 - Ran containerized jobs on Azure Container Instances, with Docker images in Azure Container
   Registry.
 
+**Data Engineer, payments fintech** (financial lakehouse, remote) · Apr 2026 to Sep 2026
+
+- Root-caused a decimal-inference overflow in the MongoDB Spark connector that turned large
+  financial values into NULL while the jobs reported success. Built the repair pipeline: a string
+  copy of each decimal written at ingestion flags the values that came back NULL, those records
+  are re-extracted in batches and merged back idempotently, and the fix propagates into silver and
+  gold. A later recurrence exposed a second defect, a nulled fee component coalesced to zero:
+  R$ 31,632.55 under-reported across 183 orders, invisible to NULL-based quality checks.
+- Fixed a central-bank regulatory report that had dropped 22,408 transactions since two
+  transaction types were introduced. Simulated the impact against the live regulatory table in
+  staging and shipped the fix with a materiality threshold agreed with the business instead of
+  refiling a closed quarter.
+- Cut daily ingestion of a MongoDB collection of 15 million documents from about 3 hours to 15
+  minutes with bounded read windows, materialized Delta staging and an explicit destination schema
+  in place of inference.
+- Built job-level cost attribution from the Databricks billing system tables and used it to
+  reverse a move to serverless compute that showed a 1.5x per-DBU gap. Right-sized the classic
+  Photon clusters from observed core-hours and disk spill, and documented the runtime regression
+  accepted in the trade.
+
 ### Tech
 
 <table>
