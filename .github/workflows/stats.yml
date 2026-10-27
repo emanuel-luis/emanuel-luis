@@ -1,0 +1,54 @@
+name: stats
+
+# Renders the README's stats cards into assets/ once a day, so the profile does not
+# depend on a shared third-party instance that runs out of API quota.
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/stats_cards.py
+      - .github/workflows/stats.yml
+
+permissions: {}
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Self-test
+        run: python3 scripts/stats_cards.py --self-test
+
+      - name: Render cards
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LOGIN: ${{ github.repository_owner }}
+        run: python3 scripts/stats_cards.py --login "$LOGIN" --out assets
+
+      - name: Commit if changed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          git add assets
+          if git diff --cached --quiet; then
+            echo "cards unchanged"
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "chore(stats): refresh profile cards"
+          git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git" HEAD:main
