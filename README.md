@@ -197,9 +197,23 @@ re-implements the method of the first paper:
 
 ### Certifications
 
-- Databricks Academy Accreditation: Databricks Fundamentals · Databricks · May 2026
-- Computer Vision Training · Data Inception · May 2022
-- Machine Learning Training · Data Inception · Mar 2022
+- [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/ae7ff0a4-3dc9-40cf-bec0-641bd7b17c25) · Databricks · Sep 2026 (valid until Sep 2028)
+- [Academy Accreditation: Azure Databricks Platform Architect](https://credentials.databricks.com/093bdac8-564d-42ff-bef3-69e79efe5455) · Databricks · Aug 2026
+- [Academy Accreditation: Generative AI Fundamentals](https://credentials.databricks.com/bda55fe5-8262-45c8-9a8a-9ff9e389ed81) · Databricks · Aug 2026
+- [Academy Accreditation: Databricks Fundamentals](https://credentials.databricks.com/15313a3a-ae9a-4bfa-847e-ce6a9246786c) · Databricks · May 2026
+- [SQL (Advanced)](https://www.hackerrank.com/certificates/f3f8890609be) · HackerRank
+
+<details>
+<summary>Courses</summary>
+
+- [Python 3: Curso Completo do Básico ao Avançado](https://www.udemy.com/certificate/UC-a1ac8f23-95bd-4b27-8133-d474faef3c44/) · Udemy (Cod3r) · Jul 2021 · 26 h
+- [C# Advanced Topics: Prepare for Technical Interviews](https://www.udemy.com/certificate/UC-1abc88b4-95e7-4e97-aaff-2471a71566da/) · Udemy (Mosh Hamedani) · Oct 2020 · 3 h
+- [C# Intermediate: Classes, Interfaces and OOP](https://www.udemy.com/certificate/UC-ec641ed1-8d1d-436f-a2b9-3388e9a8958d/) · Udemy (Mosh Hamedani) · Jul 2020 · 6 h
+- [C# Basics for Beginners: Learn C# Fundamentals by Coding](https://www.udemy.com/certificate/UC-319fe684-5ec0-48e0-8c7f-4248932ed54d/) · Udemy (Mosh Hamedani) · May 2020 · 5.5 h
+- [C# Curso Completo: Do Básico ao Avançado!](https://www.udemy.com/certificate/UC-1fb01566-9f25-4c3a-ae4f-da1ff8465ed6/) · Udemy (Cod3r) · May 2020 · 16.5 h
+- [Git e GitHub para iniciantes](https://www.udemy.com/course/git-e-github-para-iniciantes/) · Udemy · completed, no certificate
+
+</details>
 
 ### GitHub analytics
 
@@ -216,6 +230,7 @@ re-implements the method of the first paper:
 <summary>Education &amp; training</summary>
 
 - B.S. Software Engineering, UNDB (Unidade de Ensino Superior Dom Bosco), São Luís, Brazil · 2021 to 2025
-- Python and C# coursework on Udemy
+- Computer Vision Training · Data Inception · May 2022
+- Machine Learning Training · Data Inception · Mar 2022
 
 </details>
