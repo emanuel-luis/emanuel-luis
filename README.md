@@ -146,7 +146,7 @@ Personal projects, built on open or synthetic data.
 
 | Project | What it does |
 | --- | --- |
-| [de-lakehouse-pipeline](https://github.com/emanuel-luis/de-lakehouse-pipeline) | ELT on the open Olist e-commerce dataset: Polars ingestion with typed data contracts, then dbt staging, bronze, intermediate and marts on DuckDB. An hourly Airflow 3 DAG runs each dbt model and test as its own task through Astronomer Cosmos, and Elementary reports on data quality. The dbt docs and the Elementary report are [on GitHub Pages](https://emanuel-luis.github.io/de-lakehouse-pipeline/). |
+| [de-lakehouse-pipeline](https://github.com/emanuel-luis/de-lakehouse-pipeline) | ELT on Olist-shaped e-commerce data (seeded synthetic by default, or the open Olist dataset from Kaggle): Polars ingestion with typed data contracts, then dbt staging, bronze, intermediate and marts on DuckDB. An hourly Airflow 3 DAG runs each dbt model and test as its own task through Astronomer Cosmos, and Elementary reports on data quality. The dbt docs and the Elementary report are [on GitHub Pages](https://emanuel-luis.github.io/de-lakehouse-pipeline/). |
 | [vaccine-warehouse](https://github.com/emanuel-luis/vaccine-warehouse) | Kimball-style warehouse for Brazilian childhood vaccination on Postgres, with Python ELT and dbt marts as the batch layer. A Spring Boot API adds a live speed layer with idempotent ingest and a watermark that keeps a dose from being counted twice, and a React dashboard behind Keycloak reads from it. Reference data is public; doses are synthetic. |
 
 #### ML pipelines
