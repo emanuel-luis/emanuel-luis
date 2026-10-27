@@ -202,8 +202,8 @@ re-implements the method of the first paper:
 ### GitHub analytics
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=emanuel-luis&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img width="41%" height="195px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=emanuel-luis&layout=compact&langs_count=8&theme=tokyonight&hide_border=true"/>
+  <img width="53%" alt="GitHub stats" src="assets/stats.svg"/>
+  <img width="37%" alt="Most used languages" src="assets/top-langs.svg"/>
 </div>
 
 <div align="center">
