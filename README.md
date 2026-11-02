@@ -170,6 +170,7 @@ Personal projects, built on open or synthetic data.
 | --- | --- |
 | [de-lakehouse-pipeline](https://github.com/emanuel-luis/de-lakehouse-pipeline) | ELT on Olist-shaped e-commerce data (seeded synthetic by default, or the open Olist dataset from Kaggle): Polars ingestion with typed data contracts, then dbt staging, bronze, intermediate and marts on DuckDB. An hourly Airflow 3 DAG runs each dbt model and test as its own task through Astronomer Cosmos, and Elementary reports on data quality. The dbt docs and the Elementary report are [on GitHub Pages](https://emanuel-luis.github.io/de-lakehouse-pipeline/). |
 | [vaccine-warehouse](https://github.com/emanuel-luis/vaccine-warehouse) | Kimball-style warehouse for Brazilian childhood vaccination on Postgres, with Python ELT and dbt marts as the batch layer. A Spring Boot API adds a live speed layer with idempotent ingest and a watermark that keeps a dose from being counted twice, and a React dashboard behind Keycloak reads from it. Reference data is public; doses are synthetic. |
+| [retail-pricing-reverse-etl](https://github.com/emanuel-luis/retail-pricing-reverse-etl) | Work in progress, built in small pull requests. ELT plus reverse ETL for retail pricing on a laptop: Apache NiFi extracts a busy OLTP Postgres incrementally to Parquet on S3-compatible storage, ClickHouse and dbt compute new prices, and NiFi writes only the changed rows back. Every job, run and apply batch is audited in Postgres, and Prometheus and Grafana monitor the loop. |
 
 #### ML pipelines
 
@@ -178,11 +179,19 @@ Personal projects, built on open or synthetic data.
 | [covid19-xray-pipeline](https://github.com/emanuel-luis/covid19-xray-pipeline) | DVC pipeline over three public chest X-ray datasets: 41,077 images after deduplication, group-aware splits with no leakage between them, 119 handcrafted features and a ResNet-18. On the same test split, the MLP baseline scores F1 0.9446 and the ResNet-18 0.9830. |
 | [necrohub](https://github.com/emanuel-luis/necrohub) | Pipeline over synthetic pt-BR necropsy reports: generate, de-identify, fine-tune encoders and retrieve through pgvector. CI fails unless a clean run reproduces the committed `dvc.lock` and metrics. On held-out templates, a fine-tuned BioBERTpt encoder reaches strict PII F1 0.9444, against 0.6667 for regex. Synthetic data only. |
 
+#### Frameworks
+
+| Project | What it does |
+| --- | --- |
+| [pipeloom](https://github.com/emanuel-luis/pipeloom) | In design. A framework for declarative data pipelines in YAML: each project compiles into one immutable plan that runs on pandas, polars or PySpark engine plugins, locally, as one Databricks job or as an Airflow DAG, with one event stream per run. Version 0.0.2 on [PyPI](https://pypi.org/project/pipeloom/) reserves the name; the architecture and 16 ADRs are on the [docs site](https://emanuel-luis.github.io/pipeloom/). |
+
 #### Applications
 
 | Project | What it does |
 | --- | --- |
 | [bank-credit](https://github.com/emanuel-luis/bank-credit) | Credit-request workflow (FastAPI, Postgres, React). One service writes every state change to an append-only event log, enforced by a Postgres trigger and an ORM guard. SLA analytics are versioned SQL views, and exports are published with a manifest and sha256 only when their contract checks pass. |
+| [dombosco-service-desk](https://github.com/emanuel-luis/dombosco-service-desk) | School service desk (Django REST, Next.js, Postgres), a college team project. Parents open requests and staff answer them. Every write appends to an event log in the same transaction, and a Postgres trigger rejects updates and deletes. SLA and backlog analytics are SQL views reconciled against a pure-Python version, and the Parquet export checks its schema contract before it writes. |
+| [undb-campus-parking](https://github.com/emanuel-luis/undb-campus-parking) | Work in progress. A college course project rebuilt as a campus parking-availability system: synthetic face-ID turnstile events are ingested idempotently by a FastAPI service into Postgres, availability streams over WebSocket, a nightly job archives each day to Parquet, and a dbt-postgres warehouse backs the reporting API. React web and Expo mobile clients come next. |
 
 ### Open-source contributions
 
