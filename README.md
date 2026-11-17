@@ -20,6 +20,84 @@ worked since August 2022. Most of my work is batch and CDC ingestion, dbt models
 lakehouse, and the Airflow orchestration that runs them. I hold a B.S. in Software Engineering from
 UNDB.
 
+### Highlights
+
+- [pipeloom](https://github.com/emanuel-luis/pipeloom) 1.0, an engine-agnostic data pipeline
+  framework, published as seven packages on [PyPI](https://pypi.org/project/pipeloom/).
+- [mssql-cdc-pyspark](https://github.com/emanuel-luis/mssql-cdc-pyspark) 1.0, a PySpark streaming
+  source for SQL Server CDC, on [PyPI](https://pypi.org/project/mssql-cdc-pyspark/).
+- Two merged pull requests to [Astronomer Cosmos](https://github.com/astronomer/astronomer-cosmos),
+  the library that runs dbt inside Airflow.
+- Databricks Certified Data Engineer Associate.
+
+<a href="https://github.com/emanuel-luis/data-engineering-projects" title="Open the data engineering portfolio index">
+  <img src="./images/de-banner.png" width="100%" alt="Data Engineer Portfolio: open the project index" />
+</a>
+
+### Projects
+
+Personal projects. The data projects run on open or synthetic data.
+
+#### Libraries on PyPI
+
+| Project | What it does |
+| --- | --- |
+| [pipeloom](https://github.com/emanuel-luis/pipeloom) | Engine-agnostic data pipelines. Models are Python functions marked with `@model`, and a YAML project configures them; pipeloom validates the project in layers and compiles it into one immutable plan that runs on pandas, polars or PySpark, locally, as one Databricks job or as an Airflow DAG with one task per model. It writes incremental models (watermark, merge, replace_partitions, scd2), checks contracts, quarantines rows that fail expectations, and records every run in one event stream and a `run_results.json`. Stable since 1.0: core plus six plugin packages on [PyPI](https://pypi.org/project/pipeloom/), with a [docs site](https://emanuel-luis.github.io/pipeloom/). |
+| [mssql-cdc-pyspark](https://github.com/emanuel-luis/mssql-cdc-pyspark) | PySpark streaming source for SQL Server CDC on Spark's Python DataSource V2 API. Offsets are commit LSNs, and a `finalized_until` signal tells downstream jobs when a period of data is safe to read. Version 1.0 on [PyPI](https://pypi.org/project/mssql-cdc-pyspark/), with a [docs site](https://emanuel-luis.github.io/mssql-cdc-pyspark/). |
+
+#### Ingestion
+
+| Project | What it does |
+| --- | --- |
+| [ingestion-toolkit](https://github.com/emanuel-luis/ingestion-toolkit) | CLI that writes validated ingestion configs (full scan, incremental watermark, CDC) and renders each one into an Airflow 3 DAG with landing, bronze, rejects and run metadata. The watermark advances in the load transaction, so a retried run is idempotent. |
+| [ecommerce-scraping](https://github.com/emanuel-luis/ecommerce-scraping) | Scrapy crawler for three Brazilian fashion stores. It reads the schema.org Product JSON-LD in server-rendered pages, so it needs no browser, and writes redacted raw pages, Parquet partitioned by store and run date, and DuckDB views. |
+| [books-scraping](https://github.com/emanuel-luis/books-scraping) | Re-runnable crawl of the Books to Scrape sandbox (1,000 books) into a raw landing zone of HTML plus a manifest, then validated Parquet and a DuckDB serving layer. Loads upsert by UPC, so loading the same run twice changes nothing. |
+
+#### Streaming and CDC
+
+| Project | What it does |
+| --- | --- |
+| [cdc-streaming-demo](https://github.com/emanuel-luis/cdc-streaming-demo) | Postgres changes go through Debezium and Kafka (Protobuf, Schema Registry) into an append-only Delta log written by Spark Structured Streaming, then into dbt-duckdb marts and a Streamlit dashboard. `make demo` checks 200 seeded mutations end to end, and one laptop run measured a p50 commit-to-lake lag of 41.7 s. A second path reads SQL Server CDC through mssql-cdc-pyspark. |
+| [kafka-streaming-lakehouse](https://github.com/emanuel-luis/kafka-streaming-lakehouse) | Avro events flow through Kafka and Schema Registry into Apache Iceberg. A two-replica consumer group appends bronze idempotently and sends undecodable records to a DLQ; Spark Structured Streaming builds silver, Spark batch jobs build gold, and Trino queries every layer. `lakestream check` reconciles each layer with the run manifest. |
+
+#### Lakehouse and modeling
+
+| Project | What it does |
+| --- | --- |
+| [de-lakehouse-pipeline](https://github.com/emanuel-luis/de-lakehouse-pipeline) | ELT on Olist-shaped e-commerce data (seeded synthetic by default, or the open Olist dataset from Kaggle): Polars ingestion with typed data contracts, then dbt staging, bronze, intermediate and marts on DuckDB. An hourly Airflow 3 DAG runs each dbt model and test as its own task through Astronomer Cosmos, and Elementary reports on data quality. The dbt docs and the Elementary report are [on GitHub Pages](https://emanuel-luis.github.io/de-lakehouse-pipeline/). |
+| [retail-pricing-reverse-etl](https://github.com/emanuel-luis/retail-pricing-reverse-etl) | ELT plus reverse ETL for retail pricing on a laptop, measured at TPC-DS SF10 ([results](https://github.com/emanuel-luis/retail-pricing-reverse-etl/blob/main/docs/RESULTS.md)): Apache NiFi extracts a busy OLTP Postgres incrementally to Parquet on S3-compatible storage, ClickHouse and dbt compute new prices, and NiFi writes only the changed rows back. Every job, run and apply batch is audited in Postgres, and Prometheus and Grafana monitor the loop. |
+| [vaccine-warehouse](https://github.com/emanuel-luis/vaccine-warehouse) | Kimball-style warehouse for Brazilian childhood vaccination on Postgres, with Python ELT and dbt marts as the batch layer. A Spring Boot API adds a live speed layer with idempotent ingest and a watermark that keeps a dose from being counted twice, and a React dashboard behind Keycloak reads from it. Reference data is public; doses are synthetic. |
+
+#### ML pipelines
+
+| Project | What it does |
+| --- | --- |
+| [necrohub](https://github.com/emanuel-luis/necrohub) | Pipeline over synthetic pt-BR necropsy reports: generate, de-identify, fine-tune encoders and retrieve through pgvector. CI fails unless a clean run reproduces the committed `dvc.lock` and metrics. On held-out templates, a fine-tuned BioBERTpt encoder reaches strict PII F1 0.9444, against 0.6667 for regex. Synthetic data only. |
+| [covid19-xray-pipeline](https://github.com/emanuel-luis/covid19-xray-pipeline) | DVC pipeline over three public chest X-ray datasets: 41,077 images after deduplication, group-aware splits with no leakage between them, 119 handcrafted features and a ResNet-18. On the same test split, the MLP baseline scores F1 0.9446 and the ResNet-18 0.9830. |
+
+#### Applications
+
+| Project | What it does |
+| --- | --- |
+| [undb-campus-parking](https://github.com/emanuel-luis/undb-campus-parking) | A college course project rebuilt as a campus parking-availability system. A FastAPI service ingests simulated turnstile events idempotently into Postgres, an incremental occupancy counter streams over WebSocket, a nightly job archives each day to Parquet, and a dbt warehouse backs the reports of a React web app and an Expo mobile app. |
+| [bank-credit](https://github.com/emanuel-luis/bank-credit) | Credit-request workflow (FastAPI, Postgres, React). One service writes every state change to an append-only event log, enforced by a Postgres trigger and an ORM guard. SLA analytics are versioned SQL views, and exports are published with a manifest and sha256 only when their contract checks pass. |
+| [dombosco-service-desk](https://github.com/emanuel-luis/dombosco-service-desk) | School service desk (Django REST, Next.js, Postgres), a college team project. Parents open requests and staff answer them. Every write appends to an event log in the same transaction, and a Postgres trigger rejects updates and deletes. SLA and backlog analytics are SQL views reconciled against a pure-Python version, and the Parquet export checks its schema contract before it writes. |
+| [palpilot](https://github.com/emanuel-luis/palpilot) | Cost-aware control plane for an on-demand Palworld dedicated server on Google Cloud. The VM powers itself off when nobody is playing and back on from a web console that also handles saves, mods, backups, users and roles. Terraform, Cloud Run and a Discord bot. Offline by choice: billing is off, while the code and CI are still maintained. |
+
+### Open-source contributions
+
+Two merged pull requests to [Astronomer Cosmos](https://github.com/astronomer/astronomer-cosmos), the
+library that integrates dbt with Airflow:
+
+- [#2201](https://github.com/astronomer/astronomer-cosmos/pull/2201) (December 2025):
+  `DbtConsumerWatcherSensor` now carries the `template_fields` of `DbtRunLocalOperator`, so
+  Watcher-mode sensors render Airflow templates when they fall back to local execution
+  ([#2193](https://github.com/astronomer/astronomer-cosmos/issues/2193)). Includes tests.
+- [#2241](https://github.com/astronomer/astronomer-cosmos/pull/2241) (January 2026): restores
+  plain-text dbt logs, with CLI colors, in `ExecutionMode.WATCHER`. `FullOutputSubprocessHook` now
+  logs through a `process_log_line` callable, and JSON output applies only to the `SUBPROCESS`
+  invocation mode.
+
 ### Experience
 
 **Data Engineer, PULSE** (IT department of Grupo Mateus) · Aug 2022 to present
@@ -100,6 +178,7 @@ UNDB.
       <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" />
       <img src="https://img.shields.io/badge/Unity_Catalog-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Unity Catalog" />
       <img src="https://img.shields.io/badge/Confluent-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Confluent" />
+      <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
     </td>
   </tr>
   <tr>
@@ -108,6 +187,7 @@ UNDB.
       <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
       <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="SQL Server" />
       <img src="https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black" alt="DuckDB" />
+      <img src="https://img.shields.io/badge/ClickHouse-FFCC01?style=for-the-badge&logo=clickhouse&logoColor=black" alt="ClickHouse" />
       <img src="https://img.shields.io/badge/Trino-DD00A1?style=for-the-badge&logo=trino&logoColor=white" alt="Trino" />
       <img src="https://img.shields.io/badge/ADLS_Gen2-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="ADLS Gen2" />
     </td>
@@ -116,9 +196,12 @@ UNDB.
     <td><b>DevOps &amp; tooling</b></td>
     <td>
       <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+      <img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" />
       <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
       <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
       <img src="https://img.shields.io/badge/uv-DE5FE9?style=for-the-badge&logo=uv&logoColor=white" alt="uv" />
+      <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus" />
+      <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana" />
       <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
       <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
     </td>
@@ -139,73 +222,6 @@ UNDB.
     </td>
   </tr>
 </table>
-
-<a href="https://github.com/emanuel-luis/data-engineering-projects" title="Open the data engineering portfolio index">
-  <img src="./images/de-banner.png" width="100%" alt="Data Engineer Portfolio: open the project index" />
-</a>
-
-### Projects
-
-Personal projects, built on open or synthetic data.
-
-#### Ingestion
-
-| Project | What it does |
-| --- | --- |
-| [books-scraping](https://github.com/emanuel-luis/books-scraping) | Re-runnable crawl of the Books to Scrape sandbox (1,000 books) into a raw landing zone of HTML plus a manifest, then validated Parquet and a DuckDB serving layer. Loads upsert by UPC, so loading the same run twice changes nothing. |
-| [ecommerce-scraping](https://github.com/emanuel-luis/ecommerce-scraping) | Scrapy crawler for three Brazilian fashion stores. It reads the schema.org Product JSON-LD in server-rendered pages, so it needs no browser, and writes redacted raw pages, Parquet partitioned by store and run date, and DuckDB views. |
-| [ingestion-toolkit](https://github.com/emanuel-luis/ingestion-toolkit) | CLI that writes validated ingestion configs (full scan, incremental watermark, CDC) and renders each one into an Airflow 3 DAG with landing, bronze, rejects and run metadata. The watermark advances in the load transaction, so a retried run is idempotent. |
-| [mssql-cdc-pyspark](https://github.com/emanuel-luis/mssql-cdc-pyspark) | PySpark streaming source for SQL Server CDC on Spark's Python DataSource V2 API. Offsets are commit LSNs, and a `finalized_until` signal tells downstream jobs when a period of data is safe to read. On [PyPI](https://pypi.org/project/mssql-cdc-pyspark/), with a [docs site](https://emanuel-luis.github.io/mssql-cdc-pyspark/). |
-
-#### Streaming and CDC
-
-| Project | What it does |
-| --- | --- |
-| [cdc-streaming-demo](https://github.com/emanuel-luis/cdc-streaming-demo) | Postgres changes go through Debezium and Kafka (Protobuf, Schema Registry) into an append-only Delta log written by Spark Structured Streaming, then into dbt-duckdb marts and a Streamlit dashboard. `make demo` checks 200 seeded mutations end to end, and one laptop run measured a p50 commit-to-lake lag of 41.7 s. A second path reads SQL Server CDC through mssql-cdc-pyspark. |
-| [kafka-streaming-lakehouse](https://github.com/emanuel-luis/kafka-streaming-lakehouse) | Avro events flow through Kafka and Schema Registry into Apache Iceberg. A two-replica consumer group appends bronze idempotently and sends undecodable records to a DLQ; Spark Structured Streaming builds silver, Spark batch jobs build gold, and Trino queries every layer. `lakestream check` reconciles each layer with the run manifest. |
-
-#### Lakehouse and modeling
-
-| Project | What it does |
-| --- | --- |
-| [de-lakehouse-pipeline](https://github.com/emanuel-luis/de-lakehouse-pipeline) | ELT on Olist-shaped e-commerce data (seeded synthetic by default, or the open Olist dataset from Kaggle): Polars ingestion with typed data contracts, then dbt staging, bronze, intermediate and marts on DuckDB. An hourly Airflow 3 DAG runs each dbt model and test as its own task through Astronomer Cosmos, and Elementary reports on data quality. The dbt docs and the Elementary report are [on GitHub Pages](https://emanuel-luis.github.io/de-lakehouse-pipeline/). |
-| [vaccine-warehouse](https://github.com/emanuel-luis/vaccine-warehouse) | Kimball-style warehouse for Brazilian childhood vaccination on Postgres, with Python ELT and dbt marts as the batch layer. A Spring Boot API adds a live speed layer with idempotent ingest and a watermark that keeps a dose from being counted twice, and a React dashboard behind Keycloak reads from it. Reference data is public; doses are synthetic. |
-| [retail-pricing-reverse-etl](https://github.com/emanuel-luis/retail-pricing-reverse-etl) | ELT plus reverse ETL for retail pricing on a laptop, measured at TPC-DS SF10 ([results](https://github.com/emanuel-luis/retail-pricing-reverse-etl/blob/main/docs/RESULTS.md)): Apache NiFi extracts a busy OLTP Postgres incrementally to Parquet on S3-compatible storage, ClickHouse and dbt compute new prices, and NiFi writes only the changed rows back. Every job, run and apply batch is audited in Postgres, and Prometheus and Grafana monitor the loop. |
-
-#### ML pipelines
-
-| Project | What it does |
-| --- | --- |
-| [covid19-xray-pipeline](https://github.com/emanuel-luis/covid19-xray-pipeline) | DVC pipeline over three public chest X-ray datasets: 41,077 images after deduplication, group-aware splits with no leakage between them, 119 handcrafted features and a ResNet-18. On the same test split, the MLP baseline scores F1 0.9446 and the ResNet-18 0.9830. |
-| [necrohub](https://github.com/emanuel-luis/necrohub) | Pipeline over synthetic pt-BR necropsy reports: generate, de-identify, fine-tune encoders and retrieve through pgvector. CI fails unless a clean run reproduces the committed `dvc.lock` and metrics. On held-out templates, a fine-tuned BioBERTpt encoder reaches strict PII F1 0.9444, against 0.6667 for regex. Synthetic data only. |
-
-#### Frameworks
-
-| Project | What it does |
-| --- | --- |
-| [pipeloom](https://github.com/emanuel-luis/pipeloom) | In design. A framework for declarative data pipelines in YAML: each project compiles into one immutable plan that runs on pandas, polars or PySpark engine plugins, locally, as one Databricks job or as an Airflow DAG, with one event stream per run. Version 0.0.2 on [PyPI](https://pypi.org/project/pipeloom/) reserves the name; the architecture and 16 ADRs are on the [docs site](https://emanuel-luis.github.io/pipeloom/). |
-
-#### Applications
-
-| Project | What it does |
-| --- | --- |
-| [bank-credit](https://github.com/emanuel-luis/bank-credit) | Credit-request workflow (FastAPI, Postgres, React). One service writes every state change to an append-only event log, enforced by a Postgres trigger and an ORM guard. SLA analytics are versioned SQL views, and exports are published with a manifest and sha256 only when their contract checks pass. |
-| [dombosco-service-desk](https://github.com/emanuel-luis/dombosco-service-desk) | School service desk (Django REST, Next.js, Postgres), a college team project. Parents open requests and staff answer them. Every write appends to an event log in the same transaction, and a Postgres trigger rejects updates and deletes. SLA and backlog analytics are SQL views reconciled against a pure-Python version, and the Parquet export checks its schema contract before it writes. |
-| [undb-campus-parking](https://github.com/emanuel-luis/undb-campus-parking) | Work in progress. A college course project rebuilt as a campus parking-availability system: synthetic face-ID turnstile events are ingested idempotently by a FastAPI service into Postgres, availability streams over WebSocket, a nightly job archives each day to Parquet, and a dbt-postgres warehouse backs the reporting API. React web and Expo mobile clients come next. |
-
-### Open-source contributions
-
-Two merged pull requests to [Astronomer Cosmos](https://github.com/astronomer/astronomer-cosmos), the
-library that integrates dbt with Airflow:
-
-- [#2201](https://github.com/astronomer/astronomer-cosmos/pull/2201) (December 2025):
-  `DbtConsumerWatcherSensor` now carries the `template_fields` of `DbtRunLocalOperator`, so
-  Watcher-mode sensors render Airflow templates when they fall back to local execution
-  ([#2193](https://github.com/astronomer/astronomer-cosmos/issues/2193)). Includes tests.
-- [#2241](https://github.com/astronomer/astronomer-cosmos/pull/2241) (January 2026): restores
-  plain-text dbt logs, with CLI colors, in `ExecutionMode.WATCHER`. `FullOutputSubprocessHook` now
-  logs through a `process_log_line` callable, and JSON output applies only to the `SUBPROCESS`
-  invocation mode.
 
 ### Publications
 
@@ -233,6 +249,15 @@ re-implements the method of the first paper:
 - [SQL (Advanced)](https://www.hackerrank.com/certificates/f3f8890609be) · HackerRank
 
 <details>
+<summary>Education &amp; training</summary>
+
+- B.S. Software Engineering, UNDB (Unidade de Ensino Superior Dom Bosco), São Luís, Brazil · 2021 to 2025
+- Computer Vision Training · Data Inception · May 2022
+- Machine Learning Training · Data Inception · Mar 2022
+
+</details>
+
+<details>
 <summary>Courses</summary>
 
 - [Python 3: Curso Completo do Básico ao Avançado](https://www.udemy.com/certificate/UC-a1ac8f23-95bd-4b27-8133-d474faef3c44/) · Udemy (Cod3r) · Jul 2021 · 26 h
@@ -254,12 +279,3 @@ re-implements the method of the first paper:
 <div align="center">
   <img width="90%" src="https://streak-stats.demolab.com?user=emanuel-luis&theme=tokyonight&hide_border=true"/>
 </div>
-
-<details>
-<summary>Education &amp; training</summary>
-
-- B.S. Software Engineering, UNDB (Unidade de Ensino Superior Dom Bosco), São Luís, Brazil · 2021 to 2025
-- Computer Vision Training · Data Inception · May 2022
-- Machine Learning Training · Data Inception · Mar 2022
-
-</details>
